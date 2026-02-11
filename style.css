@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#48c6ef,#6f86d6);
+    min-height:100vh;
+}
+
+/* MAIN CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
+}
+
+.container h1{
+    color:white;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* GRID LAYOUT */
+.dashboard{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap:25px;
+}
+
+/* CARD STYLE (Applied to form & events section) */
+.form-section,
+.events-section,
+.demo-section{
+    background:white;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+.form-section h2,
+.events-section h2,
+.demo-section h2{
+    color:#5b6bdc;
+    margin-bottom:15px;
+}
+
+/* FORM */
+.form-group{
+    margin-top:10px;
+}
+
+.form-group label{
+    font-size:14px;
+    display:block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    margin-top:5px;
+    outline:none;
+}
+
+.form-group textarea{
+    height:80px;
+    resize:none;
+}
+
+/* BUTTONS */
+button{
+    border:none;
+    padding:10px 16px;
+    border-radius:10px;
+    cursor:pointer;
+    background:#e5e7eb;
+    margin-top:15px;
+}
+
+/* Form submit button */
+form button{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    width:100%;
+}
+
+/* EVENTS ACTIONS */
+.controls{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.controls button{
+    flex:1;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+
+/* EMPTY STATE */
+.empty-state{
+    text-align:center;
+    color:#777;
+    padding:40px 10px;
+    border:2px dashed #cbd5e1;
+    border-radius:12px;
+}
+
+/* DEMO SECTION */
+.demo-section{
+    margin-top:25px;
+}
+
+.demo-box{
+    background:#f1f5f9;
+    padding:12px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.demo-content{
+    font-weight:500;
+}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+    .dashboard{
+        grid-template-columns:1fr;
+    }
+}
